@@ -1,0 +1,214 @@
+[
+  {
+    "id": "Q001",
+    "question": "Why was claim CLM-2024-001 denied for outpatient consultation?",
+    "expected_answer": "Prior authorization from the primary care physician was required for specialist consult codes 99243 and 99213 under Plan B policy exclusions.",
+    "expected_chunk_ids": ["CLM-2024-001_policy.pdf_chunk_0", "CLM-2024-001_policy.pdf_chunk_1", "CLM-2024-001_policy.pdf_chunk_2"],
+    "modality": "pdf"
+  },
+  {
+    "id": "Q002",
+    "question": "What is the annual individual in-network deductible in the policy?",
+    "expected_answer": "The individual in-network deductible is $1,500 per calendar year.",
+    "expected_chunk_ids": ["CLM-2024-001_policy.pdf_chunk_0", "CLM-2024-001_policy.pdf_chunk_1"],
+    "modality": "pdf"
+  },
+  {
+    "id": "Q003",
+    "question": "What is the maximum out-of-pocket limit for family coverage?",
+    "expected_answer": "The maximum out-of-pocket for in-network medical care is capped at $10,000 for families.",
+    "expected_chunk_ids": ["CLM-2024-001_policy.pdf_chunk_0", "CLM-2024-001_policy.pdf_chunk_1"],
+    "modality": "pdf"
+  },
+  {
+    "id": "Q004",
+    "question": "How much is the copay for in-network specialist consultations?",
+    "expected_answer": "The in-network specialist copay is $40 per visit.",
+    "expected_chunk_ids": ["CLM-2024-001_policy.pdf_chunk_0", "CLM-2024-001_policy.pdf_chunk_1", "CLM-2024-001_policy.pdf_chunk_2"],
+    "modality": "pdf"
+  },
+  {
+    "id": "Q005",
+    "question": "What is the emergency room visit copay and when is it waived?",
+    "expected_answer": "The emergency room visit copay is $250, and it is waived if the patient is admitted as an inpatient within 24 hours.",
+    "expected_chunk_ids": ["CLM-2024-001_policy.pdf_chunk_0", "CLM-2024-001_policy.pdf_chunk_2", "CLM-2024-001_policy.pdf_chunk_3"],
+    "modality": "pdf"
+  },
+  {
+    "id": "Q006",
+    "question": "Why was claim CLM-2024-002 denied according to the explanation of benefits?",
+    "expected_answer": "The claim was denied under denial code EX-99213 / D-04 because physical therapy treatment code 97110 exceeded the allowable limit of 20 visits per calendar year without medical necessity recertification.",
+    "expected_chunk_ids": ["CLM-2024-002_eob.pdf_chunk_0", "CLM-2024-002_eob.pdf_chunk_1"],
+    "modality": "pdf"
+  },
+  {
+    "id": "Q007",
+    "question": "What is the total billed amount and patient responsibility for claim CLM-2024-002?",
+    "expected_answer": "The billed amount was $1,450.00 and patient responsibility is $1,450.00.",
+    "expected_chunk_ids": ["CLM-2024-002_eob.pdf_chunk_0", "CLM-2024-002_eob.pdf_chunk_1"],
+    "modality": "pdf"
+  },
+  {
+    "id": "Q008",
+    "question": "How many days does a member have to file an appeal for claim CLM-2024-002?",
+    "expected_answer": "The member may file a written first-level appeal within 180 days of the notice.",
+    "expected_chunk_ids": ["CLM-2024-002_eob.pdf_chunk_0", "CLM-2024-002_eob.pdf_chunk_1"],
+    "modality": "pdf"
+  },
+  {
+    "id": "Q009",
+    "question": "What primary ICD-10 diagnosis code is listed on claim form CLM-2024-003?",
+    "expected_answer": "Primary ICD-10 code is I10 for essential primary hypertension.",
+    "expected_chunk_ids": ["CLM-2024-003_claim_form.pdf_chunk_0", "CLM-2024-003_claim_form.pdf_chunk_1"],
+    "modality": "pdf"
+  },
+  {
+    "id": "Q010",
+    "question": "What is the prior authorization number and approved length of stay for claim CLM-2024-003?",
+    "expected_answer": "Prior authorization number is PA-99281-AUTH with an approved length of stay of 3 days.",
+    "expected_chunk_ids": ["CLM-2024-003_claim_form.pdf_chunk_0", "CLM-2024-003_claim_form.pdf_chunk_1"],
+    "modality": "pdf"
+  },
+
+  {
+    "id": "Q011",
+    "question": "What is the billed charge for CPT code 99213 in billing record CLM-2024-001?",
+    "expected_answer": "The charge amount for CPT 99213 is $185.00, with an allowed amount of $0.00 and denial code NO_PREAUTH.",
+    "expected_chunk_ids": ["CLM-2024-001_billing.csv_chunk_0"],
+    "modality": "table"
+  },
+  {
+    "id": "Q012",
+    "question": "What was the allowed amount and status for routine ECG CPT 93000?",
+    "expected_answer": "CPT code 93000 had an allowed amount of $75.00 and status PAID.",
+    "expected_chunk_ids": ["CLM-2024-001_billing.csv_chunk_1"],
+    "modality": "table"
+  },
+  {
+    "id": "Q013",
+    "question": "What service description corresponds to CPT code 80053 in the billing records?",
+    "expected_answer": "CPT 80053 is a comprehensive metabolic panel blood test with charge amount $120.00 and allowed amount $90.00.",
+    "expected_chunk_ids": ["CLM-2024-001_billing.csv_chunk_2"],
+    "modality": "table"
+  },
+  {
+    "id": "Q014",
+    "question": "What is the denial reason for CPT code 97110 in claim CLM-2024-002 billing?",
+    "expected_answer": "CPT 97110 therapeutic exercises was denied with denial code MAX_VISITS_EXCEEDED.",
+    "expected_chunk_ids": ["CLM-2024-001_billing.csv_chunk_3"],
+    "modality": "table"
+  },
+  {
+    "id": "Q015",
+    "question": "Why was hot cold packs therapy code 97010 denied in the billing table?",
+    "expected_answer": "CPT 97010 was denied with denial code NON_COVERED_MODALITY and allowed amount $0.00.",
+    "expected_chunk_ids": ["CLM-2024-001_billing.csv_chunk_4"],
+    "modality": "table"
+  },
+  {
+    "id": "Q016",
+    "question": "What is the allowed amount for initial hospital inpatient care CPT 99222 in claim CLM-2024-003?",
+    "expected_answer": "The allowed amount for CPT 99222 is $680.00 with status PAID.",
+    "expected_chunk_ids": ["CLM-2024-001_billing.csv_chunk_5"],
+    "modality": "table"
+  },
+  {
+    "id": "Q017",
+    "question": "What procedure was performed on 2024-03-11 under claim CLM-2024-003 in billing?",
+    "expected_answer": "Routine venipuncture blood collection under CPT code 36415 was performed, allowed amount $25.00.",
+    "expected_chunk_ids": ["CLM-2024-001_billing.csv_chunk_6"],
+    "modality": "table"
+  },
+  {
+    "id": "Q018",
+    "question": "What is the charge amount for chest X-ray code 71045 in claim CLM-2024-004?",
+    "expected_answer": "The charge amount for CPT 71045 is $160.00 with allowed amount $120.00.",
+    "expected_chunk_ids": ["CLM-2024-001_billing.csv_chunk_7"],
+    "modality": "table"
+  },
+  {
+    "id": "Q019",
+    "question": "What pulmonary test was performed under claim CLM-2024-004 and what was its allowed amount?",
+    "expected_answer": "Spirometry pulmonary function test (CPT 94010) was performed with allowed amount $175.00.",
+    "expected_chunk_ids": ["CLM-2024-001_billing.csv_chunk_8"],
+    "modality": "table"
+  },
+  {
+    "id": "Q020",
+    "question": "What is the charge and status of the emergency room visit CPT 99284 in claim CLM-2024-005?",
+    "expected_answer": "Charge amount is $1,450.00, allowed amount is $1,160.00, and status is PAID.",
+    "expected_chunk_ids": ["CLM-2024-001_billing.csv_chunk_9"],
+    "modality": "table"
+  },
+
+  {
+    "id": "Q021",
+    "question": "What medication and dosage is prescribed in prescription scan CLM-2024-001?",
+    "expected_answer": "Lisinopril 20mg Oral Tablet, take 1 tablet daily every morning for hypertension control.",
+    "expected_chunk_ids": ["CLM-2024-001_prescription.jpg_chunk_0"],
+    "modality": "image"
+  },
+  {
+    "id": "Q022",
+    "question": "How many refills are authorized for Lisinopril in prescription CLM-2024-001?",
+    "expected_answer": "3 refills authorized with a 90-day supply (90 tablets).",
+    "expected_chunk_ids": ["CLM-2024-001_prescription.jpg_chunk_0"],
+    "modality": "image"
+  },
+  {
+    "id": "Q023",
+    "question": "What is the NDC code and copay collected on prescription scan CLM-2024-001?",
+    "expected_answer": "NDC Code is 68180-514-01 and copay collected is $10.00 (Tier 1 Preferred Generic).",
+    "expected_chunk_ids": ["CLM-2024-001_prescription.jpg_chunk_0"],
+    "modality": "image"
+  },
+  {
+    "id": "Q024",
+    "question": "Who is the prescribing physician on prescription CLM-2024-001?",
+    "expected_answer": "Dr. Elena Rostova, MD (DEA: BR9876543).",
+    "expected_chunk_ids": ["CLM-2024-001_prescription.jpg_chunk_0"],
+    "modality": "image"
+  },
+  {
+    "id": "Q025",
+    "question": "What exam type was performed in radiology scan report CLM-2024-002?",
+    "expected_answer": "MRI Right Knee Without Contrast (CPT 73721).",
+    "expected_chunk_ids": ["CLM-2024-002_scan.png_chunk_0"],
+    "modality": "image"
+  },
+  {
+    "id": "Q026",
+    "question": "What was the diagnostic impression on the right knee MRI in CLM-2024-002?",
+    "expected_answer": "Moderate medial meniscus degenerative tear at posterior horn with mild joint effusion and no acute ACL/PCL tear.",
+    "expected_chunk_ids": ["CLM-2024-002_scan.png_chunk_0"],
+    "modality": "image"
+  },
+  {
+    "id": "Q027",
+    "question": "What prior authorization number is matched to the MRI scan in CLM-2024-002?",
+    "expected_answer": "Prior authorization number PA-MRI-66321 was approved for the right knee MRI.",
+    "expected_chunk_ids": ["CLM-2024-002_scan.png_chunk_0"],
+    "modality": "image"
+  },
+  {
+    "id": "Q028",
+    "question": "What medication and dosage is written on prescription order CLM-2024-003?",
+    "expected_answer": "Metformin Hydrochloride 500mg Extended Release, take 1 tablet by mouth twice daily with meals.",
+    "expected_chunk_ids": ["CLM-2024-003_prescription.jpg_chunk_0"],
+    "modality": "image"
+  },
+  {
+    "id": "Q029",
+    "question": "What is the insurance copay and therapeutic class for Metformin in CLM-2024-003?",
+    "expected_answer": "Therapeutic class is Oral Hypoglycemic Agent and copay is $5.00 (Tier 1 Formulary Approved).",
+    "expected_chunk_ids": ["CLM-2024-003_prescription.jpg_chunk_0"],
+    "modality": "image"
+  },
+  {
+    "id": "Q030",
+    "question": "Who is the dispensing pharmacist on prescription order CLM-2024-003?",
+    "expected_answer": "Sarah Jenkins, PharmD.",
+    "expected_chunk_ids": ["CLM-2024-003_prescription.jpg_chunk_0"],
+    "modality": "image"
+  }
+]

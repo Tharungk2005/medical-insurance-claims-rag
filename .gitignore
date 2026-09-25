@@ -1,0 +1,27 @@
+# Environments
+medical_rag_chatbot/venv/
+venv/
+env/
+.venv/
+
+# Environment Variables & Secrets
+.env
+*.env
+medical_rag_chatbot/.env
+
+# Local Databases & Indexes
+medical_rag_chatbot/chroma_db/
+chroma_db/
+medical_rag_chatbot/.cache/
+.cache/
+*.pkl
+bm25_index.pkl
+data/processed/images/*
+!data/processed/images/.gitkeep
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/

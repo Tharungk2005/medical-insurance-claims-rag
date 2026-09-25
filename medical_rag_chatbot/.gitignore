@@ -1,0 +1,12 @@
+venv/
+.env
+chroma_db/
+.cache/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+bm25_index.pkl
+data/processed/images/*
+!data/processed/images/.gitkeep

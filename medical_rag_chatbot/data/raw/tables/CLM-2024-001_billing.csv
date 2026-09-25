@@ -1,0 +1,11 @@
+claim_id,service_date,cpt_code,description,charge_amount,allowed_amount,status,denial_code
+CLM-2024-001,2024-01-15,99213,Office outpatient visit 20-29 min,185.0,0.0,DENIED,NO_PREAUTH
+CLM-2024-001,2024-01-15,93000,Electrocardiogram routine ECG 12 leads,95.0,75.0,PAID,NONE
+CLM-2024-001,2024-01-15,80053,Comprehensive metabolic panel blood test,120.0,90.0,PAID,NONE
+CLM-2024-002,2024-02-14,97110,Therapeutic exercises physical therapy,250.0,0.0,DENIED,MAX_VISITS_EXCEEDED
+CLM-2024-002,2024-02-14,97010,Application of hot cold packs therapy,45.0,0.0,DENIED,NON_COVERED_MODALITY
+CLM-2024-003,2024-03-10,99222,Initial hospital inpatient care moderate,850.0,680.0,PAID,NONE
+CLM-2024-003,2024-03-11,36415,Routine venipuncture blood collection,35.0,25.0,PAID,NONE
+CLM-2024-004,2024-04-05,71045,Chest X-ray single view frontal,160.0,120.0,PAID,NONE
+CLM-2024-004,2024-04-05,94010,Spirometry pulmonary function test,210.0,175.0,PAID,NONE
+CLM-2024-005,2024-05-18,99284,Emergency department visit high severity,1450.0,1160.0,PAID,NONE

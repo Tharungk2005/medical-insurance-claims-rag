@@ -1,0 +1,4 @@
+Configuration,Total Questions,Hit Rate@3,MRR,Precision@3
+dense_only,30,0.5333,0.5167,0.4778
+hybrid_rrf,30,0.6333,0.5778,0.4
+full_pipeline,30,0.6667,0.6111,0.4556

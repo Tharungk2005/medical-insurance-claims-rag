@@ -1,0 +1,167 @@
+[
+  {
+    "id": "Q001",
+    "question": "Why was claim CLM-2024-001 denied for outpatient consultation?",
+    "ground_truth": "Prior authorization from the primary care physician was required for specialist consult codes 99243 and 99213 under Plan B policy exclusions.",
+    "answer_Variant_A_ZeroShot": "Based on the retrieved medical records ([Source 1: Billing Table | File: CLM-2024-001_billing.csv | Row: 0 | Claim: CLM-2024-001 | Confidence: 0.96]):\n\nHeaders: claim_id | service_date | cpt_code | description | charge_amount | allowed_amount | status | denial_code. Values: CLM-2024-001 | 2024-01-15 | 99213 | Office outpatient visit 20-29 min | 185.0 | 0.0 | DENIED | NO_PREAUTH\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_A_ZeroShot": 2.0,
+    "answer_Variant_B_FewShot": "Based on the retrieved medical records ([Source 1: Billing Table | File: CLM-2024-001_billing.csv | Row: 0 | Claim: CLM-2024-001 | Confidence: 0.96]):\n\nHeaders: claim_id | service_date | cpt_code | description | charge_amount | allowed_amount | status | denial_code. Values: CLM-2024-001 | 2024-01-15 | 99213 | Office outpatient visit 20-29 min | 185.0 | 0.0 | DENIED | NO_PREAUTH\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_B_FewShot": 2.0,
+    "answer_Variant_C_FewShot_CoT": "Based on the retrieved medical records ([Source 1: Billing Table | File: CLM-2024-001_billing.csv | Row: 0 | Claim: CLM-2024-001 | Confidence: 0.96]):\n\nHeaders: claim_id | service_date | cpt_code | description | charge_amount | allowed_amount | status | denial_code. Values: CLM-2024-001 | 2024-01-15 | 99213 | Office outpatient visit 20-29 min | 185.0 | 0.0 | DENIED | NO_PREAUTH\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_C_FewShot_CoT": 2.0
+  },
+  {
+    "id": "Q002",
+    "question": "What is the annual individual in-network deductible in the policy?",
+    "ground_truth": "The individual in-network deductible is $1,500 per calendar year.",
+    "answer_Variant_A_ZeroShot": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-001_policy.pdf | Page: 1 | Claim: CLM-2024-001 | Confidence: 1.00]):\n\nAPEX HEALTHCARE INSURANCE - COMPREHENSIVE BENEFIT POLICY (2024)\nPolicy Number: POL-884920\nClaim ID: CLM-2024-001\nEffective Date: January 1, 2024\nSECTION 1: COVERAGE OVERVIEW AND DEDUCTIBLES\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_A_ZeroShot": 1.0,
+    "answer_Variant_B_FewShot": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-001_policy.pdf | Page: 1 | Claim: CLM-2024-001 | Confidence: 1.00]):\n\nAPEX HEALTHCARE INSURANCE - COMPREHENSIVE BENEFIT POLICY (2024)\nPolicy Number: POL-884920\nClaim ID: CLM-2024-001\nEffective Date: January 1, 2024\nSECTION 1: COVERAGE OVERVIEW AND DEDUCTIBLES\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_B_FewShot": 1.0,
+    "answer_Variant_C_FewShot_CoT": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-001_policy.pdf | Page: 1 | Claim: CLM-2024-001 | Confidence: 1.00]):\n\nAPEX HEALTHCARE INSURANCE - COMPREHENSIVE BENEFIT POLICY (2024)\nPolicy Number: POL-884920\nClaim ID: CLM-2024-001\nEffective Date: January 1, 2024\nSECTION 1: COVERAGE OVERVIEW AND DEDUCTIBLES\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_C_FewShot_CoT": 1.0
+  },
+  {
+    "id": "Q003",
+    "question": "What is the maximum out-of-pocket limit for family coverage?",
+    "ground_truth": "The maximum out-of-pocket for in-network medical care is capped at $10,000 for families.",
+    "answer_Variant_A_ZeroShot": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-001_policy.pdf | Page: 1 | Claim: CLM-2024-001 | Confidence: 1.00]):\n\n1.2 Out-of-Pocket Maximum:\n- Maximum out-of-pocket for in-network medical care is capped at $5,000 for individuals and $10,000 for families.\nSECTION 2: COPAYMENTS AND COINSURANCE\n2.1 Primary Care Visits:\n- Copay is $25 per office visit for participating network providers. Preventive health screenings are covered at 100% with no copay.\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_A_ZeroShot": 1.0,
+    "answer_Variant_B_FewShot": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-001_policy.pdf | Page: 1 | Claim: CLM-2024-001 | Confidence: 1.00]):\n\n1.2 Out-of-Pocket Maximum:\n- Maximum out-of-pocket for in-network medical care is capped at $5,000 for individuals and $10,000 for families.\nSECTION 2: COPAYMENTS AND COINSURANCE\n2.1 Primary Care Visits:\n- Copay is $25 per office visit for participating network providers. Preventive health screenings are covered at 100% with no copay.\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_B_FewShot": 1.0,
+    "answer_Variant_C_FewShot_CoT": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-001_policy.pdf | Page: 1 | Claim: CLM-2024-001 | Confidence: 1.00]):\n\n1.2 Out-of-Pocket Maximum:\n- Maximum out-of-pocket for in-network medical care is capped at $5,000 for individuals and $10,000 for families.\nSECTION 2: COPAYMENTS AND COINSURANCE\n2.1 Primary Care Visits:\n- Copay is $25 per office visit for participating network providers. Preventive health screenings are covered at 100% with no copay.\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_C_FewShot_CoT": 1.0
+  },
+  {
+    "id": "Q004",
+    "question": "How much is the copay for in-network specialist consultations?",
+    "ground_truth": "The in-network specialist copay is $40 per visit.",
+    "answer_Variant_A_ZeroShot": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-001_policy.pdf | Page: 1 | Claim: CLM-2024-001 | Confidence: 1.00]):\n\n- In-network specialist copay is $40 per visit.\n- Prior authorization from the designated primary care physician (PCP) is strictly required for outpatient specialist consultations (CPT code 99243 and 99213).\n- Failure to obtain prior authorization prior to the consultation date will result in immediate claim denial under Plan B policy exclusions.\nSECTION 3: INPATIENT AND EMERGENCY CARE\n3.1 Emergency Room Services:\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_A_ZeroShot": 4.0,
+    "answer_Variant_B_FewShot": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-001_policy.pdf | Page: 1 | Claim: CLM-2024-001 | Confidence: 1.00]):\n\n- In-network specialist copay is $40 per visit.\n- Prior authorization from the designated primary care physician (PCP) is strictly required for outpatient specialist consultations (CPT code 99243 and 99213).\n- Failure to obtain prior authorization prior to the consultation date will result in immediate claim denial under Plan B policy exclusions.\nSECTION 3: INPATIENT AND EMERGENCY CARE\n3.1 Emergency Room Services:\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_B_FewShot": 4.0,
+    "answer_Variant_C_FewShot_CoT": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-001_policy.pdf | Page: 1 | Claim: CLM-2024-001 | Confidence: 1.00]):\n\n- In-network specialist copay is $40 per visit.\n- Prior authorization from the designated primary care physician (PCP) is strictly required for outpatient specialist consultations (CPT code 99243 and 99213).\n- Failure to obtain prior authorization prior to the consultation date will result in immediate claim denial under Plan B policy exclusions.\nSECTION 3: INPATIENT AND EMERGENCY CARE\n3.1 Emergency Room Services:\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_C_FewShot_CoT": 4.0
+  },
+  {
+    "id": "Q005",
+    "question": "What is the emergency room visit copay and when is it waived?",
+    "ground_truth": "The emergency room visit copay is $250, and it is waived if the patient is admitted as an inpatient within 24 hours.",
+    "answer_Variant_A_ZeroShot": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-001_policy.pdf | Page: 1 | Claim: CLM-2024-001 | Confidence: 1.00]):\n\n- In-network specialist copay is $40 per visit.\n- Prior authorization from the designated primary care physician (PCP) is strictly required for outpatient specialist consultations (CPT code 99243 and 99213).\n- Failure to obtain prior authorization prior to the consultation date will result in immediate claim denial under Plan B policy exclusions.\nSECTION 3: INPATIENT AND EMERGENCY CARE\n3.1 Emergency Room Services:\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_A_ZeroShot": 2.0,
+    "answer_Variant_B_FewShot": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-001_policy.pdf | Page: 1 | Claim: CLM-2024-001 | Confidence: 1.00]):\n\n- In-network specialist copay is $40 per visit.\n- Prior authorization from the designated primary care physician (PCP) is strictly required for outpatient specialist consultations (CPT code 99243 and 99213).\n- Failure to obtain prior authorization prior to the consultation date will result in immediate claim denial under Plan B policy exclusions.\nSECTION 3: INPATIENT AND EMERGENCY CARE\n3.1 Emergency Room Services:\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_B_FewShot": 2.0,
+    "answer_Variant_C_FewShot_CoT": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-001_policy.pdf | Page: 1 | Claim: CLM-2024-001 | Confidence: 1.00]):\n\n- In-network specialist copay is $40 per visit.\n- Prior authorization from the designated primary care physician (PCP) is strictly required for outpatient specialist consultations (CPT code 99243 and 99213).\n- Failure to obtain prior authorization prior to the consultation date will result in immediate claim denial under Plan B policy exclusions.\nSECTION 3: INPATIENT AND EMERGENCY CARE\n3.1 Emergency Room Services:\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_C_FewShot_CoT": 2.0
+  },
+  {
+    "id": "Q006",
+    "question": "Why was claim CLM-2024-002 denied according to the explanation of benefits?",
+    "ground_truth": "The claim was denied under denial code EX-99213 / D-04 because physical therapy treatment code 97110 exceeded the allowable limit of 20 visits per calendar year without medical necessity recertification.",
+    "answer_Variant_A_ZeroShot": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-002_eob.pdf | Page: 1 | Claim: CLM-2024-002 | Confidence: 0.99]):\n\nEXPLANATION OF BENEFITS (EOB) - NOTICE OF ADJUDICATION\nInsurance Carrier: Apex Healthcare Solutions\nClaim ID: CLM-2024-002\nPatient ID: PT-90412\nDate of Service: February 14, 2024\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_A_ZeroShot": 2.0,
+    "answer_Variant_B_FewShot": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-002_eob.pdf | Page: 1 | Claim: CLM-2024-002 | Confidence: 0.99]):\n\nEXPLANATION OF BENEFITS (EOB) - NOTICE OF ADJUDICATION\nInsurance Carrier: Apex Healthcare Solutions\nClaim ID: CLM-2024-002\nPatient ID: PT-90412\nDate of Service: February 14, 2024\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_B_FewShot": 2.0,
+    "answer_Variant_C_FewShot_CoT": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-002_eob.pdf | Page: 1 | Claim: CLM-2024-002 | Confidence: 0.99]):\n\nEXPLANATION OF BENEFITS (EOB) - NOTICE OF ADJUDICATION\nInsurance Carrier: Apex Healthcare Solutions\nClaim ID: CLM-2024-002\nPatient ID: PT-90412\nDate of Service: February 14, 2024\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_C_FewShot_CoT": 2.0
+  },
+  {
+    "id": "Q007",
+    "question": "What is the total billed amount and patient responsibility for claim CLM-2024-002?",
+    "ground_truth": "The billed amount was $1,450.00 and patient responsibility is $1,450.00.",
+    "answer_Variant_A_ZeroShot": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-002_eob.pdf | Page: 1 | Claim: CLM-2024-002 | Confidence: 1.00]):\n\nEXPLANATION OF BENEFITS (EOB) - NOTICE OF ADJUDICATION\nInsurance Carrier: Apex Healthcare Solutions\nClaim ID: CLM-2024-002\nPatient ID: PT-90412\nDate of Service: February 14, 2024\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_A_ZeroShot": 2.0,
+    "answer_Variant_B_FewShot": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-002_eob.pdf | Page: 1 | Claim: CLM-2024-002 | Confidence: 1.00]):\n\nEXPLANATION OF BENEFITS (EOB) - NOTICE OF ADJUDICATION\nInsurance Carrier: Apex Healthcare Solutions\nClaim ID: CLM-2024-002\nPatient ID: PT-90412\nDate of Service: February 14, 2024\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_B_FewShot": 2.0,
+    "answer_Variant_C_FewShot_CoT": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-002_eob.pdf | Page: 1 | Claim: CLM-2024-002 | Confidence: 1.00]):\n\nEXPLANATION OF BENEFITS (EOB) - NOTICE OF ADJUDICATION\nInsurance Carrier: Apex Healthcare Solutions\nClaim ID: CLM-2024-002\nPatient ID: PT-90412\nDate of Service: February 14, 2024\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_C_FewShot_CoT": 2.0
+  },
+  {
+    "id": "Q008",
+    "question": "How many days does a member have to file an appeal for claim CLM-2024-002?",
+    "ground_truth": "The member may file a written first-level appeal within 180 days of the notice.",
+    "answer_Variant_A_ZeroShot": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-002_eob.pdf | Page: 1 | Claim: CLM-2024-002 | Confidence: 0.86]):\n\nDenial Reason: Non-covered elective physical therapy modality.\nDetails: Physical therapy treatment code 97110 exceeded the allowable limit of 20 visits per calendar year without medical necessity recertification from an attending physiatrist.\nAPPEAL RIGHTS:\nThe member may file a written first-level appeal within 180 days of this notice. Supporting clinical notes, diagnostic imaging reports, and a physician letter of medical necessity must accompany the appeal packet.\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_A_ZeroShot": 2.0,
+    "answer_Variant_B_FewShot": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-002_eob.pdf | Page: 1 | Claim: CLM-2024-002 | Confidence: 0.86]):\n\nDenial Reason: Non-covered elective physical therapy modality.\nDetails: Physical therapy treatment code 97110 exceeded the allowable limit of 20 visits per calendar year without medical necessity recertification from an attending physiatrist.\nAPPEAL RIGHTS:\nThe member may file a written first-level appeal within 180 days of this notice. Supporting clinical notes, diagnostic imaging reports, and a physician letter of medical necessity must accompany the appeal packet.\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_B_FewShot": 2.0,
+    "answer_Variant_C_FewShot_CoT": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-002_eob.pdf | Page: 1 | Claim: CLM-2024-002 | Confidence: 0.86]):\n\nDenial Reason: Non-covered elective physical therapy modality.\nDetails: Physical therapy treatment code 97110 exceeded the allowable limit of 20 visits per calendar year without medical necessity recertification from an attending physiatrist.\nAPPEAL RIGHTS:\nThe member may file a written first-level appeal within 180 days of this notice. Supporting clinical notes, diagnostic imaging reports, and a physician letter of medical necessity must accompany the appeal packet.\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_C_FewShot_CoT": 2.0
+  },
+  {
+    "id": "Q009",
+    "question": "What primary ICD-10 diagnosis code is listed on claim form CLM-2024-003?",
+    "ground_truth": "Primary ICD-10 code is I10 for essential primary hypertension.",
+    "answer_Variant_A_ZeroShot": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-003_claim_form.pdf | Page: 1 | Claim: CLM-2024-003 | Confidence: 1.00]):\n\nHEALTH INSURANCE CLAIM FORM (HCFA-1500)\nClaim ID: CLM-2024-003\nPatient ID: PT-78219\nInsured Group Number: GRP-55201\nDate of Service: March 10, 2024\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_A_ZeroShot": 1.0,
+    "answer_Variant_B_FewShot": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-003_claim_form.pdf | Page: 1 | Claim: CLM-2024-003 | Confidence: 1.00]):\n\nHEALTH INSURANCE CLAIM FORM (HCFA-1500)\nClaim ID: CLM-2024-003\nPatient ID: PT-78219\nInsured Group Number: GRP-55201\nDate of Service: March 10, 2024\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_B_FewShot": 1.0,
+    "answer_Variant_C_FewShot_CoT": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-003_claim_form.pdf | Page: 1 | Claim: CLM-2024-003 | Confidence: 1.00]):\n\nHEALTH INSURANCE CLAIM FORM (HCFA-1500)\nClaim ID: CLM-2024-003\nPatient ID: PT-78219\nInsured Group Number: GRP-55201\nDate of Service: March 10, 2024\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_C_FewShot_CoT": 1.0
+  },
+  {
+    "id": "Q010",
+    "question": "What is the prior authorization number and approved length of stay for claim CLM-2024-003?",
+    "ground_truth": "Prior authorization number is PA-99281-AUTH with an approved length of stay of 3 days.",
+    "answer_Variant_A_ZeroShot": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-003_claim_form.pdf | Page: 1 | Claim: CLM-2024-003 | Confidence: 0.99]):\n\nCharge Billed: $3,200.00\nPRIOR AUTHORIZATION STATUS:\nPrior Auth Number: PA-99281-AUTH\nStatus: Approved on March 08, 2024 by Medical Review Board\nApproved Length of Stay: 3 Days\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_A_ZeroShot": 2.0,
+    "answer_Variant_B_FewShot": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-003_claim_form.pdf | Page: 1 | Claim: CLM-2024-003 | Confidence: 0.99]):\n\nCharge Billed: $3,200.00\nPRIOR AUTHORIZATION STATUS:\nPrior Auth Number: PA-99281-AUTH\nStatus: Approved on March 08, 2024 by Medical Review Board\nApproved Length of Stay: 3 Days\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_B_FewShot": 2.0,
+    "answer_Variant_C_FewShot_CoT": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-003_claim_form.pdf | Page: 1 | Claim: CLM-2024-003 | Confidence: 0.99]):\n\nCharge Billed: $3,200.00\nPRIOR AUTHORIZATION STATUS:\nPrior Auth Number: PA-99281-AUTH\nStatus: Approved on March 08, 2024 by Medical Review Board\nApproved Length of Stay: 3 Days\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_C_FewShot_CoT": 2.0
+  },
+  {
+    "id": "Q011",
+    "question": "What is the billed charge for CPT code 99213 in billing record CLM-2024-001?",
+    "ground_truth": "The charge amount for CPT 99213 is $185.00, with an allowed amount of $0.00 and denial code NO_PREAUTH.",
+    "answer_Variant_A_ZeroShot": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-003_claim_form.pdf | Page: 1 | Claim: CLM-2024-003 | Confidence: 1.00]):\n\nHEALTH INSURANCE CLAIM FORM (HCFA-1500)\nClaim ID: CLM-2024-003\nPatient ID: PT-78219\nInsured Group Number: GRP-55201\nDate of Service: March 10, 2024\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_A_ZeroShot": 2.0,
+    "answer_Variant_B_FewShot": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-003_claim_form.pdf | Page: 1 | Claim: CLM-2024-003 | Confidence: 1.00]):\n\nHEALTH INSURANCE CLAIM FORM (HCFA-1500)\nClaim ID: CLM-2024-003\nPatient ID: PT-78219\nInsured Group Number: GRP-55201\nDate of Service: March 10, 2024\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_B_FewShot": 2.0,
+    "answer_Variant_C_FewShot_CoT": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-003_claim_form.pdf | Page: 1 | Claim: CLM-2024-003 | Confidence: 1.00]):\n\nHEALTH INSURANCE CLAIM FORM (HCFA-1500)\nClaim ID: CLM-2024-003\nPatient ID: PT-78219\nInsured Group Number: GRP-55201\nDate of Service: March 10, 2024\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_C_FewShot_CoT": 2.0
+  },
+  {
+    "id": "Q012",
+    "question": "What was the allowed amount and status for routine ECG CPT 93000?",
+    "ground_truth": "CPT code 93000 had an allowed amount of $75.00 and status PAID.",
+    "answer_Variant_A_ZeroShot": "Based on the retrieved medical records ([Source 1: Billing Table | File: CLM-2024-001_billing.csv | Row: 1 | Claim: CLM-2024-001 | Confidence: 1.00]):\n\nHeaders: claim_id | service_date | cpt_code | description | charge_amount | allowed_amount | status | denial_code. Values: CLM-2024-001 | 2024-01-15 | 93000 | Electrocardiogram routine ECG 12 leads | 95.0 | 75.0 | PAID | NONE\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_A_ZeroShot": 3.0,
+    "answer_Variant_B_FewShot": "Based on the retrieved medical records ([Source 1: Billing Table | File: CLM-2024-001_billing.csv | Row: 1 | Claim: CLM-2024-001 | Confidence: 1.00]):\n\nHeaders: claim_id | service_date | cpt_code | description | charge_amount | allowed_amount | status | denial_code. Values: CLM-2024-001 | 2024-01-15 | 93000 | Electrocardiogram routine ECG 12 leads | 95.0 | 75.0 | PAID | NONE\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_B_FewShot": 3.0,
+    "answer_Variant_C_FewShot_CoT": "Based on the retrieved medical records ([Source 1: Billing Table | File: CLM-2024-001_billing.csv | Row: 1 | Claim: CLM-2024-001 | Confidence: 1.00]):\n\nHeaders: claim_id | service_date | cpt_code | description | charge_amount | allowed_amount | status | denial_code. Values: CLM-2024-001 | 2024-01-15 | 93000 | Electrocardiogram routine ECG 12 leads | 95.0 | 75.0 | PAID | NONE\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_C_FewShot_CoT": 3.0
+  },
+  {
+    "id": "Q013",
+    "question": "What service description corresponds to CPT code 80053 in the billing records?",
+    "ground_truth": "CPT 80053 is a comprehensive metabolic panel blood test with charge amount $120.00 and allowed amount $90.00.",
+    "answer_Variant_A_ZeroShot": "Based on the retrieved medical records ([Source 1: Billing Table | File: CLM-2024-001_billing.csv | Row: 2 | Claim: CLM-2024-001 | Confidence: 0.95]):\n\nHeaders: claim_id | service_date | cpt_code | description | charge_amount | allowed_amount | status | denial_code. Values: CLM-2024-001 | 2024-01-15 | 80053 | Comprehensive metabolic panel blood test | 120.0 | 90.0 | PAID | NONE\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_A_ZeroShot": 5.0,
+    "answer_Variant_B_FewShot": "Based on the retrieved medical records ([Source 1: Billing Table | File: CLM-2024-001_billing.csv | Row: 2 | Claim: CLM-2024-001 | Confidence: 0.95]):\n\nHeaders: claim_id | service_date | cpt_code | description | charge_amount | allowed_amount | status | denial_code. Values: CLM-2024-001 | 2024-01-15 | 80053 | Comprehensive metabolic panel blood test | 120.0 | 90.0 | PAID | NONE\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_B_FewShot": 5.0,
+    "answer_Variant_C_FewShot_CoT": "Based on the retrieved medical records ([Source 1: Billing Table | File: CLM-2024-001_billing.csv | Row: 2 | Claim: CLM-2024-001 | Confidence: 0.95]):\n\nHeaders: claim_id | service_date | cpt_code | description | charge_amount | allowed_amount | status | denial_code. Values: CLM-2024-001 | 2024-01-15 | 80053 | Comprehensive metabolic panel blood test | 120.0 | 90.0 | PAID | NONE\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_C_FewShot_CoT": 5.0
+  },
+  {
+    "id": "Q014",
+    "question": "What is the denial reason for CPT code 97110 in claim CLM-2024-002 billing?",
+    "ground_truth": "CPT 97110 therapeutic exercises was denied with denial code MAX_VISITS_EXCEEDED.",
+    "answer_Variant_A_ZeroShot": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-002_eob.pdf | Page: 1 | Claim: CLM-2024-002 | Confidence: 0.99]):\n\nDenial Reason: Non-covered elective physical therapy modality.\nDetails: Physical therapy treatment code 97110 exceeded the allowable limit of 20 visits per calendar year without medical necessity recertification from an attending physiatrist.\nAPPEAL RIGHTS:\nThe member may file a written first-level appeal within 180 days of this notice. Supporting clinical notes, diagnostic imaging reports, and a physician letter of medical necessity must accompany the appeal packet.\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_A_ZeroShot": 1.0,
+    "answer_Variant_B_FewShot": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-002_eob.pdf | Page: 1 | Claim: CLM-2024-002 | Confidence: 0.99]):\n\nDenial Reason: Non-covered elective physical therapy modality.\nDetails: Physical therapy treatment code 97110 exceeded the allowable limit of 20 visits per calendar year without medical necessity recertification from an attending physiatrist.\nAPPEAL RIGHTS:\nThe member may file a written first-level appeal within 180 days of this notice. Supporting clinical notes, diagnostic imaging reports, and a physician letter of medical necessity must accompany the appeal packet.\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_B_FewShot": 1.0,
+    "answer_Variant_C_FewShot_CoT": "Based on the retrieved medical records ([Source 1: Document | File: CLM-2024-002_eob.pdf | Page: 1 | Claim: CLM-2024-002 | Confidence: 0.99]):\n\nDenial Reason: Non-covered elective physical therapy modality.\nDetails: Physical therapy treatment code 97110 exceeded the allowable limit of 20 visits per calendar year without medical necessity recertification from an attending physiatrist.\nAPPEAL RIGHTS:\nThe member may file a written first-level appeal within 180 days of this notice. Supporting clinical notes, diagnostic imaging reports, and a physician letter of medical necessity must accompany the appeal packet.\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_C_FewShot_CoT": 1.0
+  },
+  {
+    "id": "Q015",
+    "question": "Why was hot cold packs therapy code 97010 denied in the billing table?",
+    "ground_truth": "CPT 97010 was denied with denial code NON_COVERED_MODALITY and allowed amount $0.00.",
+    "answer_Variant_A_ZeroShot": "Based on the retrieved medical records ([Source 1: Billing Table | File: CLM-2024-001_billing.csv | Row: 4 | Claim: CLM-2024-002 | Confidence: 0.96]):\n\nHeaders: claim_id | service_date | cpt_code | description | charge_amount | allowed_amount | status | denial_code. Values: CLM-2024-002 | 2024-02-14 | 97010 | Application of hot cold packs therapy | 45.0 | 0.0 | DENIED | NON_COVERED_MODALITY\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_A_ZeroShot": 1.0,
+    "answer_Variant_B_FewShot": "Based on the retrieved medical records ([Source 1: Billing Table | File: CLM-2024-001_billing.csv | Row: 4 | Claim: CLM-2024-002 | Confidence: 0.96]):\n\nHeaders: claim_id | service_date | cpt_code | description | charge_amount | allowed_amount | status | denial_code. Values: CLM-2024-002 | 2024-02-14 | 97010 | Application of hot cold packs therapy | 45.0 | 0.0 | DENIED | NON_COVERED_MODALITY\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_B_FewShot": 1.0,
+    "answer_Variant_C_FewShot_CoT": "Based on the retrieved medical records ([Source 1: Billing Table | File: CLM-2024-001_billing.csv | Row: 4 | Claim: CLM-2024-002 | Confidence: 0.96]):\n\nHeaders: claim_id | service_date | cpt_code | description | charge_amount | allowed_amount | status | denial_code. Values: CLM-2024-002 | 2024-02-14 | 97010 | Application of hot cold packs therapy | 45.0 | 0.0 | DENIED | NON_COVERED_MODALITY\n\n*(Note: Generated via grounded local extraction. Set a valid GROQ_API_KEY in .env for full LLaMA 3.1 generation)*",
+    "score_Variant_C_FewShot_CoT": 1.0
+  }
+]

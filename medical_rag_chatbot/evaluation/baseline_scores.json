@@ -1,0 +1,7 @@
+{
+  "Configuration": "full_pipeline",
+  "Total Questions": 30,
+  "Hit Rate@3": 0.6667,
+  "MRR": 0.6111,
+  "Precision@3": 0.4556
+}

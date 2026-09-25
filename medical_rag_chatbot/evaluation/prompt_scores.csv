@@ -1,0 +1,4 @@
+Prompt Variant,Average Judge Score (1-5),Faithfulness,Answer Relevancy
+Variant_A_ZeroShot,2.07,0.413,0.463
+Variant_B_FewShot,2.07,0.413,0.463
+Variant_C_FewShot_CoT,2.07,0.413,0.463
