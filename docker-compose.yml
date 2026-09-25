@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  claims-rag-assistant:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: medical_claims_rag
+    ports:
+      - "8501:8501"
+    environment:
+      - GROQ_API_KEY=${GROQ_API_KEY}
+      - HUGGINGFACE_TOKEN=${HUGGINGFACE_TOKEN}
+      - LANGCHAIN_API_KEY=${LANGCHAIN_API_KEY}
+      - LANGCHAIN_TRACING_V2=true
+      - LANGCHAIN_PROJECT=medical-rag-chatbot
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+    volumes:
+      - ./medical_rag_chatbot/data:/app/medical_rag_chatbot/data
+      - ./medical_rag_chatbot/chroma_db:/app/medical_rag_chatbot/chroma_db
+      - ./medical_rag_chatbot/.cache:/app/medical_rag_chatbot/.cache
+    restart: unless-stopped
